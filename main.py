@@ -1,40 +1,40 @@
 import Eliana, Renato
 
 while True:
-    
-    try:
-        n1 = float(input('Dgite o primeiro numero: '))
-    except ValueError:
-        print('Digite um valor válido')
-    try:
-        n2 = float(input('Dgite o segundo numero: '))
-
-    except ValueError:
-        print('Digite um valor válido') 
-
-    op = ('\n1 - soma\n2 - subtração\n 3 - divisão\n4 - multiplicação')
     while True:
+        try:
+            n1 = float(input('Dgite o primeiro numero: '))
+            break
+        except ValueError:
+            print('Digite um valor válido')
+
+    while True:        
+        try:
+            n2 = float(input('Dgite o segundo numero: '))
+            break
+        except ValueError:
+            print('Digite um valor válido') 
+
+    
+    while True:
+        op = int(input('\n1 - soma\n2 - subtração\n3 - divisão\n4 - multiplicação\n'))
         if op == 1:
-            soma(n1, n2)
-            print('O resultado da soma é: ', soma)
+            print('O resultado da soma é: ', Eliana.soma(n1, n2))
             break
         elif op == 2:
-            menos(n1, n2)
-            print('O resultado da subtração é: ', menos)
+            print('O resultado da subtração é: ', Renato.menos(n1, n2))
             break
         elif op == 3:
-            divisao(n1, n2)
-            print('O resultado da divisão é: ', divisao)
+            print('O resultado da divisão é: ', Renato.divisao(n1, n2))
             break
         elif op == 4:
-            muliplicaao(n1, n2)
-            print('O resultado da multiplicação é: ', multiplicaao)
+            print('O resultado da multiplicação é: ', Eliana.multiplicacao(n1, n2))
             break
         else:
             print('Operação inválida')
             break
-    
-    break
+    print()
+ 
 
         
            
