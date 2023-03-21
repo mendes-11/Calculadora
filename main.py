@@ -11,7 +11,7 @@ while True:
 
     except ValueError:
         print('Digite um valor válido') 
-        
+
     op = ('\n1 - soma\n2 - subtração\n 3 - divisão\n4 - multiplicação')
     while True:
         if op == 1:
@@ -32,6 +32,7 @@ while True:
             break
         else:
             print('Operação inválida')
+            break
     
     break
 
