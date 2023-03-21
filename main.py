@@ -1,1 +1,3 @@
-import Eliana, Renato
+print("Deu boa")
+print("eu to certo")
+print("Consegui")
