@@ -1,18 +1,17 @@
 import Eliana, Renato
 
 while True:
-    while True:
-        try:
-            n1 = float(input('Dgite o primeiro numero: '))
-            break
-        except ValueError:
-            print('Digite um valor válido')
-    while True:
-        try:
-            n2 = float(input('Dgite o segundo numero: '))
-            break
-        except ValueError:
-            print('Digite um valor válido') 
+    
+    try:
+        n1 = float(input('Dgite o primeiro numero: '))
+    except ValueError:
+        print('Digite um valor válido')
+    try:
+        n2 = float(input('Dgite o segundo numero: '))
+
+    except ValueError:
+        print('Digite um valor válido') 
+        
     op = ('\n1 - soma\n2 - subtração\n 3 - divisão\n4 - multiplicação')
     while True:
         if op == 1:
